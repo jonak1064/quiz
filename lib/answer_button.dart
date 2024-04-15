@@ -1,6 +1,6 @@
-import 'package:flutter/cupertino.dart';
+//import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:quiz/questions_screen.dart';
+//import 'package:quiz/questions_screen.dart';
 
 class AnswerButton extends StatelessWidget {
   const AnswerButton({
@@ -17,13 +17,16 @@ class AnswerButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: onTap,
       style: ElevatedButton.styleFrom(
-        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 40),
-        backgroundColor: const Color.fromARGB(633, 43, 3, 32),
+        padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 40),
+        backgroundColor: const Color.fromARGB(176, 212, 146, 140),
         foregroundColor: Colors.white,
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadiusDirectional.circular(40)),
       ),
-      child: Text(answerText),
+      child: Text(
+        answerText,
+        textAlign: TextAlign.center,
+      ),
     );
   }
 }
